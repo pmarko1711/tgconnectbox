@@ -18,7 +18,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends git && apt-get 
 WORKDIR /app
 ADD app.py /app
 ADD connectbox.py /app
-ADD config/config.yaml /app
 
 # config directory
 VOLUME /config
@@ -29,4 +28,3 @@ USER appuser
 
 # During debugging, this entry point will be overridden. For more information, please refer to https://aka.ms/vscode-docker-python-debug
 CMD ["python", "app.py"]
-#CMD ["sh"]

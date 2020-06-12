@@ -1,7 +1,11 @@
 # petibear/tgconnectbox
 
-Telegram bot to perform selected operations on UPC Connect Box (Compal CH7465LG) with.
+Telegram bot to perform selected operations on UPC/Unitymedia Connect Box (Compal CH7465LG) with.
 This is a dirty (docker image) wrapper around [python-connect-box](https://github.com/home-assistant-ecosystem/python-connect-box) that allows passing commands only in one pre-defined telegram chat.
+
+Uses:
+* [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot)
+* [python-connect-box](https://github.com/home-assistant-ecosystem/python-connect-box)
 
 # Usage:
 
@@ -48,5 +52,8 @@ Supported commands:
 * `/ipv6f` - show IPv6 filters
 * `/ipv6f i` - toggle enable/disable of the i-th IPv6 filter
 
-# Acknowledgements
-Thanks to @fabaff, the author of [python-connect-box](https://github.com/home-assistant-ecosystem/python-connect-box)
+# Other
+It's quite dirty, I did in a rush not fully understanding usage of Python's `asyncio` and of the t
+
+# Thanks
+Thanks to @fabaff (the author of the [python-connect-box](https://github.com/home-assistant-ecosystem/python-connect-box)) and all the contributors to the [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot).
