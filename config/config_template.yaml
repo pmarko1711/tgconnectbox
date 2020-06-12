@@ -1,0 +1,7 @@
+version: 1
+telegram:
+    token: token
+    chat_id: 1234567890
+connect_box:
+    host: 192.168.0.1
+    password: dummy
