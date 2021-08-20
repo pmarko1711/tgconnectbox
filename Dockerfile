@@ -23,6 +23,7 @@ ADD connectbox.py /app
 VOLUME /config
 
 # Switching to a non-root user, please refer to https://aka.ms/vscode-docker-python-user-rights
+# THIS WILL PROBABLY NEED TO BE FIXED
 #RUN useradd appuser && chown -R appuser /app && chown -R appuser /config
 RUN useradd appuser && chown -R appuser /app
 USER appuser
