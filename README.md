@@ -1,4 +1,4 @@
-# petibear/tgconnectbox
+# pmarko1711/tgconnectbox
 
 Telegram bot to perform selected operations on UPC/Unitymedia Connect Box (Compal CH7465LG) with.
 This is a dirty (docker image) wrapper around [python-connect-box](https://github.com/home-assistant-ecosystem/python-connect-box) that allows passing commands only in one pre-defined telegram chat.
@@ -19,16 +19,16 @@ Uses:
 
 ## Docker
 
-Launch the docker image `petibear/tgconnectbox` mounting your folder with with `config.yaml` to the `/config` volume. Need to be launched from a host that can see both telegram and the router.
+Launch the docker image `pmarko1711/tgconnectbox` mounting your folder with with `config.yaml` to the `/config` volume. Need to be launched from a host that can see both telegram and the router.
 
 Linux
 ```shell
-docker run --rm  -v path/to/config/folder/:/config petibear/tgconnectbox
+docker run --rm  -v path/to/config/folder/:/config pmarko1711/tgconnectbox
 ```
 
 WSL2
 ```shell
-docker run --rm  -v c:/path/to/config/folder/:/config petibear/tgconnectbox
+docker run --rm  -v c:/path/to/config/folder/:/config pmarko1711/tgconnectbox
 ```
 
 | Parameter | Type | Function |
